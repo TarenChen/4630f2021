@@ -1,0 +1,10 @@
+This week we took time to research APIs needed for our project as well as how to call the APIs on Android Studios. We were able to find references for storing dates and times. This reference also lets us work with the calendar neutral API to interact with the users of our application.
+
+The other reference we researched was the AlarmClock API. This API allows us to set alarms and fetch alarm data from the android device. The API also allows you to filter through your alarms and assign any ringtone the user wants.
+
+
+The links to the reference page.
+
+https://developer.android.com/reference/java/time/package-summary
+https://developer.android.com/reference/android/provider/AlarmClock
+
