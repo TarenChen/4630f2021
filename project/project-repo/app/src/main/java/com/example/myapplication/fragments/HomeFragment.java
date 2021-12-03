@@ -7,8 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.myapplication.R;
+
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +68,18 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        String myDate = java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
+        TextView editTextDate = (TextView) getView().findViewById(R.id.textDateAndTime);
+
+        Calendar sCalendar = Calendar.getInstance();
+        String dayShortName = sCalendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault());
+
+        editTextDate.setText(dayShortName+", " + myDate);
+
     }
 }
