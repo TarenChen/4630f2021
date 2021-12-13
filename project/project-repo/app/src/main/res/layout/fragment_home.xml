@@ -14,17 +14,24 @@
             android:id="@+id/timePicker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp" />
-
-        <Button
+            android:layout_marginTop="100dp"
+            android:timePickerMode="clock"/>
+        <TextView
+            android:id="@+id/timeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Set alarm"
-            android:id="@+id/start_alarm"
-            android:onClick="startTimer"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="Time: "/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/timePicker"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:onClick="setTimer"
+            android:text="Set alarm" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,7 +40,6 @@
             android:text="Set the alarm clock!"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:layout_below="@id/start_alarm"/>
     </RelativeLayout>
 
 </FrameLayout>

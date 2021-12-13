@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="text">Light Mode</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="monthBack"><![CDATA[<-]]></string>
     <string name="monthNext"><![CDATA[->]]></string>
+
 </resources>

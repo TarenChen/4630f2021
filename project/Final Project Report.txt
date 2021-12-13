@@ -1,0 +1,28 @@
+﻿Many people stay up late using their smartphones which prevent people from having a good sleeping schedule. 
+
+
+There are many reasons why using your smartphone before bed can impact your health:
+* Keep your mind active and engaged
+* The blue light from the phone suppresses melatonin and increases alertness, which leads to taking longer to fall asleep
+* Interferes with circadian rhythm
+* Causes you to feel more tired the next day
+* Leads to developing poor sleeping habits and screen-time habits
+
+
+Our project aims to incentivize following a healthy sleep schedule and help people form regular sleep habits. To do that we created an Android application that will motivate the user to reach their sleep goals in a fun and rewarding way.
+
+
+Goals 
+Have the ability to create/modify alarms from the home page. Create a record page that has a descriptive calendar. A profile page that allows the user to edit profile picture and name as well as keeping track of their achievements. We also want to have a settings page where you can change from light to dark mode.
+
+
+Alternative approaches to solving the problem
+We had multiple ideas to create our application. We thought about using React Native(created by Meta) and Flutter (created by Google) for our front-end since they are cross platform which lets you have one code base for both Android and IOS. We also considered using Kotlin as it is very popular for Android development.
+
+
+Chosen approach
+What we ended up choosing was Android Studio and Java.
+
+
+Justification over other approaches
+The reason we didn’t use any cross platform technology stack was because it would run slower. We also decided to use Java because we were more familiar with it.
