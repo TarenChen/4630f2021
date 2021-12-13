@@ -22,7 +22,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/profileInfo"
             android:layout_width="match_parent"
-            android:layout_height="175dp"
+            android:layout_height="145dp"
             android:layout_marginTop="30dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
@@ -36,38 +36,36 @@
                 android:clickable="true"
                 android:focusable="true">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="center"
-                    android:text="FirstName LastName"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#79D6D1D1" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:gravity="center|top"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/linearLayout2">
 
                     <TextView
-                        android:layout_width="0dp"
+                        android:id="@+id/firstName"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Edit Profile"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="firstName"
+                        android:textColor="@color/black"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  " />
+
+                    <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="lastName"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
             </LinearLayout>

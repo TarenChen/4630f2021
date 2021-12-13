@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="60dp"
             android:text="How do you feel today?"
             android:textSize="20sp"
             android:textAlignment="center"
@@ -41,6 +41,7 @@
 
             <RadioButton
                 android:id="@+id/radio_one"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":-D"
@@ -48,24 +49,28 @@
 
             <RadioButton
                 android:id="@+id/radio_two"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":-)"/>
 
             <RadioButton
                 android:id="@+id/radio_three"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":-|"/>
 
             <RadioButton
                 android:id="@+id/radio_four"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":-/"/>
 
             <RadioButton
                 android:id="@+id/radio_five"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":-("/>
@@ -78,7 +83,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Save"
-            android:background="@null"
             android:textStyle="bold"
             android:onClick="saveEventAction"
             android:layout_gravity="center"
