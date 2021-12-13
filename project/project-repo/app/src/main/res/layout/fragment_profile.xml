@@ -98,6 +98,15 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:gravity="start"
+                    android:text="coming soon!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -127,6 +136,15 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:gravity="start"
+                    android:text="coming soon!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
