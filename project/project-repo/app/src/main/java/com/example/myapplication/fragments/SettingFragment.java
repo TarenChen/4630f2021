@@ -68,10 +68,10 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        getActivity().setContentView(R.layout.fragment_setting);
-        switchCompat = (SwitchCompat) getActivity().findViewById(R.id.switchCompat);
-        sharedPreferences = getActivity().getSharedPreferences("night", 0);
-        Boolean booleanValue = sharedPreferences.getBoolean("night_mode", true);
+        View v = inflater.inflate(R.layout.fragment_setting, container, false);
+        switchCompat = (SwitchCompat) v.findViewById(R.id.switchCompat);
+        sharedPreferences = this.getActivity().getSharedPreferences("night", 0);
+        Boolean booleanValue = sharedPreferences.getBoolean("night_mode", false);
         if(booleanValue){
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             switchCompat.setChecked(true);
@@ -95,6 +95,6 @@ public class SettingFragment extends Fragment {
                 }
             }
         });
-        return inflater.inflate(R.layout.fragment_setting, container, false);
+        return v;
     }
 }
